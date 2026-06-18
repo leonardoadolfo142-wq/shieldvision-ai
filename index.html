@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldVision AI - See Threats. Stop Them. Stay Secure.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🛡️ ShieldVision AI</h1>
+                <p class="tagline">See Threats. Stop Them. Stay Secure.</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#threats">Threats</a></li>
+                    <li><a href="#copilot">AI Copilot</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="dashboard">
+            <!-- Security Score -->
+            <section class="security-score">
+                <div class="score-card">
+                    <h2>Security Score</h2>
+                    <div class="score-display">82</div>
+                    <p class="score-status">Good</p>
+                    <div class="score-bar">
+                        <div class="score-progress" style="width: 82%"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Globe Container -->
+            <section class="globe-section">
+                <h2>Internet Threat Visualizer</h2>
+                <div id="globeContainer" class="globe-container">
+                    <canvas id="globeCanvas"></canvas>
+                    <p class="globe-placeholder">Rotating Globe - Threat Visualization</p>
+                </div>
+            </section>
+
+            <!-- Threat Feed -->
+            <section class="threat-feed">
+                <h2>Active Threats</h2>
+                <div class="threats-list">
+                    <div class="threat-item threat-high">
+                        <span class="threat-level">HIGH</span>
+                        <span class="threat-type">Malware Detection</span>
+                        <span class="threat-time">2 min ago</span>
+                    </div>
+                    <div class="threat-item threat-medium">
+                        <span class="threat-level">MEDIUM</span>
+                        <span class="threat-type">Suspicious DNS Activity</span>
+                        <span class="threat-time">15 min ago</span>
+                    </div>
+                    <div class="threat-item threat-low">
+                        <span class="threat-level">LOW</span>
+                        <span class="threat-type">Outdated SSL Certificate</span>
+                        <span class="threat-time">1 hour ago</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Copilot -->
+            <section class="ai-copilot">
+                <h2>🤖 AI Security Copilot</h2>
+                <div class="copilot-box">
+                    <div class="copilot-response">
+                        <p>Your security score has improved by 5% this week. I recommend enabling two-factor authentication on all accounts and updating your DNS settings to block malicious domains.</p>
+                    </div>
+                    <div class="copilot-input">
+                        <input type="text" id="copilotInput" placeholder="Ask me about security..." />
+                        <button id="copilotBtn">Send</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 ShieldVision AI | Active Development | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
